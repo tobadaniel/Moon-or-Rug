@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moon or Rug — a memecoin survival arcade</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">🌕</div>
+    <div>
+      <h1>MOON <span class="or">or</span> RUG</h1>
+      <p class="tagline">14 days. 56 launches. Four agent degens betting against you. Survive.</p>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><span class="k">Day</span><span class="v" id="stat-day">1 / 14</span></div>
+    <div class="stat"><span class="k">Tick</span><span class="v" id="stat-tick">0 / 8</span></div>
+    <div class="stat"><span class="k">Cash</span><span class="v" id="stat-cash">100 NEAR</span></div>
+    <div class="stat"><span class="k">Bags worth</span><span class="v" id="stat-bags">0 NEAR</span></div>
+    <div class="stat"><span class="k">Net worth</span><span class="v" id="stat-worth">100 NEAR</span></div>
+    <div class="stat"><span class="k">Standing</span><span class="v" id="stat-rank">#1 of 5</span></div>
+  </div>
+  <div class="actions">
+    <button id="btn-tick" class="primary">Next tick ⏭</button>
+    <button id="btn-day">Finish day 🌇</button>
+    <button id="btn-next-day">Next day 🌅</button>
+    <button id="btn-ff" title="Run to the end of the season">Fast-forward ⏩</button>
+    <button id="btn-reset" class="ghost">New season</button>
+  </div>
+</header>
+
+<div id="season-banner" class="season hidden"></div>
+<p id="toast" class="toast" role="status"></p>
+
+<main class="layout">
+  <section class="board">
+    <h2>🚀 Today's launches</h2>
+    <div id="coins-today" class="coins"></div>
+    <h2>📈 Still trading</h2>
+    <div id="coins-older" class="coins"></div>
+    <h2>💀 The graveyard</h2>
+    <div id="coins-dead" class="coins dead"></div>
+  </section>
+
+  <aside class="side">
+    <section class="panel">
+      <h2>🏆 Leaderboard</h2>
+      <table class="board-table" id="leaderboard"></table>
+      <p class="dim small">Scores are cash + bags at live prices. Rugged bags count for what they are worth: nothing.</p>
+    </section>
+    <section class="panel">
+      <h2>📣 Agent feed</h2>
+      <ul id="feed" class="feed"></ul>
+    </section>
+    <section class="panel howto">
+      <h2>How to survive</h2>
+      <ol>
+        <li>Read the chips before you ape: 🔒 locked liquidity rugs about half as often as unlocked. It is in the odds table in the README, and it is real.</li>
+        <li>Dev holding 25%+ and a dev who rugged before are both bad smells. Meme score is mostly vibes.</li>
+        <li>Buy with the buttons on a coin card. Your buys nudge the price up, your sells nudge it down. Bram's buys move it a lot.</li>
+        <li>Moons run hot for a while, then stall. Sell into strength, not after the music stops.</li>
+        <li>After the rug tick there is no exit. Ever. That sting is the game.</li>
+        <li>Beat the agents by day 14. Andy apes blind, Dana buys bounces, Lisa only buys locked, Bram is the whale.</li>
+      </ol>
+    </section>
+  </aside>
+</main>
+
+<footer>
+  <p>Built for NEAR HACKATHON 2026, Games With Real Economies. A fully local simulation:
+  coins map to NEP-141 tokens and the agent traders to agent accounts with function-call keys. See README.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
