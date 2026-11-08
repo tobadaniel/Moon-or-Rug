@@ -106,10 +106,11 @@ per the Games track's "players never notice the chain" bonus.
 
 ## Same builder, other NEAR HACKATHON projects
 
-Disclosure (per the hackathon's two-project rule): my other submitted
-project in this hackathon is:
+This project was built during NEAR HACKATHON 2026 but is **not one of
+my two submitted projects**. My submitted projects are:
 
 - **NEAR, On The Evidence** — a reproducible NEAR investment-thesis dashboard (Investment Thesis track).
+- **Pump Rider** — a one-button memecoin chart-riding arcade game (Games With Real Economies track).
 
 Also built by me during this hackathon, but not submitted:
 
